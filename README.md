@@ -38,7 +38,7 @@ go build -buildmode plugin \
         -o ~/.config/kustomize/plugin/sh.d.kustomize/v1/opclisecret/OpCLISecret.so .
 ```
 
-4. Put the plugin into `~/.config/kustomize/plugin/sh.d.kustomize/v1/opclisecret/OpCLISecret.so` (the command under 2. is already doing that for you)
+4. Put the plugin into `~/.config/kustomize/plugin/sh.d.kustomize/v1/opclisecret/OpCLISecret.so` (the command under 3. is already doing that for you)
 
 ## Usage
 
@@ -78,7 +78,7 @@ The above example will generate the following secret:
 ```yaml
 apiVersion: v1
 data:
-  somethingSomething: <value of "username" of item 'Netflix' within 1Password>
+  mySecretKey: <value of "username" of item 'Netflix' within 1Password>
 kind: Secret
 metadata:
   name: myopsecret-24b5hmbhk5
