@@ -7,6 +7,8 @@ github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSs
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/docopt/docopt-go v0.0.0-20180111231733-ee0de3bc6815/go.mod h1:WwZ+bS3ebgob9U8Nd0kOddGdZWjyMGR8Wziv+TBNwSE=
+github.com/dvcrn/go-1password-cli v0.0.0-20230204103258-83a390cdb425 h1:yrKZuMz5i8PAiliZE/QePxjRvWPTdXPFmpFZM0OqGBw=
+github.com/dvcrn/go-1password-cli v0.0.0-20230204103258-83a390cdb425/go.mod h1:vAxPgRqwCkLH9Z/G6zveccDLI8Rl7UnvL+ZJn3DRtSo=
 github.com/dvcrn/go-op-cli v0.0.0-20230204080208-da0dda8b109c h1:EYXkf4jDqNFQF7VwmPyhz6ZUXg05HutvApQfhx+cByM=
 github.com/dvcrn/go-op-cli v0.0.0-20230204080208-da0dda8b109c/go.mod h1:XfkdINOOjtcBH5wBVKO2lKVeJ6pirGITiU10W1WC578=
 github.com/dvcrn/go-op-cli v0.0.0-20230204090145-a964b1341b0e h1:qVtoTxlVuN+KCMeGCjDYqedp8IbF4XBBPF8RIZm6BE4=

@@ -5,7 +5,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/dvcrn/go-op-cli/op"
+	"github.com/dvcrn/go-1password-cli/op"
 	"log"
 	"sigs.k8s.io/kustomize/api/kv"
 	"sigs.k8s.io/kustomize/api/resmap"
