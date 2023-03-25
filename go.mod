@@ -3,14 +3,13 @@ module sigs.k8s.io/kustomize/plugin/sh.d.kustomize/v1/opclisecret
 go 1.19
 
 require (
-	github.com/dvcrn/go-op-cli v0.0.0-20230204090145-a964b1341b0e
-	sigs.k8s.io/kustomize/api v0.13.1
+	github.com/dvcrn/go-1password-cli v0.0.0-20230204103258-83a390cdb425
+	sigs.k8s.io/kustomize/api v0.13.2
 	sigs.k8s.io/yaml v1.3.0
 )
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
-	github.com/dvcrn/go-1password-cli v0.0.0-20230204103258-83a390cdb425 // indirect
 	github.com/go-errors/errors v1.4.2 // indirect
 	github.com/go-openapi/jsonpointer v0.19.6 // indirect
 	github.com/go-openapi/jsonreference v0.20.1 // indirect
@@ -28,5 +27,5 @@ require (
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	k8s.io/kube-openapi v0.0.0-20230109183929-3758b55a6596 // indirect
-	sigs.k8s.io/kustomize/kyaml v0.14.0 // indirect
+	sigs.k8s.io/kustomize/kyaml v0.14.1 // indirect
 )

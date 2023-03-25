@@ -9,10 +9,6 @@ github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSs
 github.com/docopt/docopt-go v0.0.0-20180111231733-ee0de3bc6815/go.mod h1:WwZ+bS3ebgob9U8Nd0kOddGdZWjyMGR8Wziv+TBNwSE=
 github.com/dvcrn/go-1password-cli v0.0.0-20230204103258-83a390cdb425 h1:yrKZuMz5i8PAiliZE/QePxjRvWPTdXPFmpFZM0OqGBw=
 github.com/dvcrn/go-1password-cli v0.0.0-20230204103258-83a390cdb425/go.mod h1:vAxPgRqwCkLH9Z/G6zveccDLI8Rl7UnvL+ZJn3DRtSo=
-github.com/dvcrn/go-op-cli v0.0.0-20230204080208-da0dda8b109c h1:EYXkf4jDqNFQF7VwmPyhz6ZUXg05HutvApQfhx+cByM=
-github.com/dvcrn/go-op-cli v0.0.0-20230204080208-da0dda8b109c/go.mod h1:XfkdINOOjtcBH5wBVKO2lKVeJ6pirGITiU10W1WC578=
-github.com/dvcrn/go-op-cli v0.0.0-20230204090145-a964b1341b0e h1:qVtoTxlVuN+KCMeGCjDYqedp8IbF4XBBPF8RIZm6BE4=
-github.com/dvcrn/go-op-cli v0.0.0-20230204090145-a964b1341b0e/go.mod h1:XfkdINOOjtcBH5wBVKO2lKVeJ6pirGITiU10W1WC578=
 github.com/envoyproxy/go-control-plane v0.9.1-0.20191026205805-5f8ba28d4473/go.mod h1:YTl/9mNaCwkRvm6d1a2C3ymFceY/DCBVvsKhRF0iEA4=
 github.com/envoyproxy/protoc-gen-validate v0.1.0/go.mod h1:iSmxcyjqTsJpI2R4NaDN7+kN2VEUnK/pcBlmesArF7c=
 github.com/evanphx/json-patch v4.11.0+incompatible h1:glyUF9yIYtMHzn8xaKw5rMhdWcwsYV8dZHIq5567/xs=
@@ -141,9 +137,9 @@ honnef.co/go/tools v0.0.0-20190102054323-c2f93a96b099/go.mod h1:rf3lG4BRIbNafJWh
 honnef.co/go/tools v0.0.0-20190523083050-ea95bdfd59fc/go.mod h1:rf3lG4BRIbNafJWhAfAdb/ePZxsR/4RtNHQocxwk9r4=
 k8s.io/kube-openapi v0.0.0-20230109183929-3758b55a6596 h1:8cNCQs+WqqnSpZ7y0LMQPKD+RZUHU17VqLPMW3qxnxc=
 k8s.io/kube-openapi v0.0.0-20230109183929-3758b55a6596/go.mod h1:/BYxry62FuDzmI+i9B+X2pqfySRmSOW2ARmj5Zbqhj0=
-sigs.k8s.io/kustomize/api v0.13.1 h1:2jLAM6w5nGznnQgq2V0YUMFGtAixD2SO8Q+f5B9Un9U=
-sigs.k8s.io/kustomize/api v0.13.1/go.mod h1:KDhwElNK4jxc2/cEpFQOnYT/72t+ET7yeasogV89ow4=
-sigs.k8s.io/kustomize/kyaml v0.14.0 h1:uzH0MzMtYypHW09LbMDk8k/lT/LSsUuCoZIuEGhIBNE=
-sigs.k8s.io/kustomize/kyaml v0.14.0/go.mod h1:AN1/IpawKilWD7V+YvQwRGUvuUOOWpjsHu6uHwonSF4=
+sigs.k8s.io/kustomize/api v0.13.2 h1:kejWfLeJhUsTGioDoFNJET5LQe/ajzXhJGYoU+pJsiA=
+sigs.k8s.io/kustomize/api v0.13.2/go.mod h1:DUp325VVMFVcQSq+ZxyDisA8wtldwHxLZbr1g94UHsw=
+sigs.k8s.io/kustomize/kyaml v0.14.1 h1:c8iibius7l24G2wVAGZn/Va2wNys03GXLjYVIcFVxKA=
+sigs.k8s.io/kustomize/kyaml v0.14.1/go.mod h1:AN1/IpawKilWD7V+YvQwRGUvuUOOWpjsHu6uHwonSF4=
 sigs.k8s.io/yaml v1.3.0 h1:a2VclLzOGrwOHDiV8EfBGhvjHvP46CtW5j6POvhYGGo=
 sigs.k8s.io/yaml v1.3.0/go.mod h1:GeOyir5tyXNByN85N/dRIT9es5UQNerPYEKK56eTBm8=
