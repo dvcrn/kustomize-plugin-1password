@@ -15,7 +15,7 @@ Make sure you can actually use `op` by trying a command like: `op vault list`.
 
 ### Build + Install
 
-Because of the [skew problem](https://kubectl.docs.kubernetes.io/guides/extending_kustomize/go_plugins/#the-skew-problem), you are _very likely_ required to build both `kustomize` as well as this plugin with the same Golang versions.
+Because of the [skew problem](https://kubectl.docs.kubernetes.io/guides/extending_kustomize/go_plugins/#the-skew-problem), you are **very likely** required to build both `kustomize` as well as this plugin with the same Golang versions.
 
 You're welcome to try without doing this, but you may run into issues.
 
@@ -39,6 +39,8 @@ go build -buildmode plugin \
 ```
 
 4. Put the plugin into `~/.config/kustomize/plugin/sh.d.kustomize/v1/opclisecret/OpCLISecret.so` (the command under 3. is already doing that for you)
+
+Refer to FAQ / troubleshooting below if this doesn't work for you
 
 ## Usage
 
@@ -89,15 +91,9 @@ type: Opaque
 
 ## Troubleshooting
 
-**How can I get rid of the "attempting to load plugin" message? I can't pipe into `kubectl` anymore!**
-
-Use sed:
-
-```bash
-kustomize build --enable-alpha-plugins | sed 1d | kubectl apply -f -
-```
-
 **I'm getting "plugin was built with a different version of package x**
+
+Honestly, plugins in Golang ain't great. This needs be rewritten with the newer [exec KRM functions](https://kubectl.docs.kubernetes.io/guides/extending_kustomize/exec_krm_functions/) for this exact problem.s
 
 This usually means that the dependencies of this plugin and `kustomize` are no longer in sync.
 
@@ -106,3 +102,24 @@ Go to the `go.mod` file of the kustomize repo (https://github.com/kubernetes-sig
 Oh and please make a Pull Request to this repo with the new dependencies :)
 
 Make sure `which kustomize` is actually the version that you installed with Go (same version that built this plugin), and not something installed through brew for example.
+
+If this *still* didn't do it for you, clone the kustomize repository, align the go.mod and go.sum files, and potentially make sure everything in `kustomize` and this repository are pointing to the same files on disk, eg: 
+
+In kustomize/go.mod
+
+```
+replace sigs.k8s.io/kustomize/api => ../api
+
+replace sigs.k8s.io/kustomize/cmd/config => ../cmd/config
+
+replace sigs.k8s.io/kustomize/kyaml => ../kyaml
+```
+
+In this repo/go.mod
+```
+replace sigs.k8s.io/kustomize/api => /path/to/kustomize/src/kustomize/api
+
+replace sigs.k8s.io/kustomize/cmd/config => /path/to/kustomize/src/kustomize/cmd/config
+
+replace sigs.k8s.io/kustomize/kyaml => /path/to/kustomize/src/kustomize/kyaml
+```

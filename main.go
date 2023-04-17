@@ -5,13 +5,15 @@ package main
 
 import (
 	"fmt"
-	"github.com/dvcrn/go-1password-cli/op"
 	"log"
+	"strings"
+
+	"github.com/dvcrn/go-1password-cli/op"
 	"sigs.k8s.io/kustomize/api/kv"
 	"sigs.k8s.io/kustomize/api/resmap"
 	"sigs.k8s.io/kustomize/api/types"
+	// _ "sigs.k8s.io/kustomize/kustomize/v5/commands"
 	"sigs.k8s.io/yaml"
-	"strings"
 )
 
 type OpValue struct {
