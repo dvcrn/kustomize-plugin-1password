@@ -13,6 +13,8 @@
 
 Make sure you can actually use `op` by trying a command like: `op vault list`.
 
+Currently tested (and versions aligned) with kustomize 5.0.3, install with `go install sigs.k8s.io/kustomize/kustomize/v5@v5.0.3`
+
 ### Build + Install
 
 Because of the [skew problem](https://kubectl.docs.kubernetes.io/guides/extending_kustomize/go_plugins/#the-skew-problem), you are **very likely** required to build both `kustomize` as well as this plugin with the same Golang versions.
