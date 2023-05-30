@@ -103,23 +103,31 @@ Oh and please make a Pull Request to this repo with the new dependencies :)
 
 Make sure `which kustomize` is actually the version that you installed with Go (same version that built this plugin), and not something installed through brew for example.
 
-If this *still* didn't do it for you, clone the kustomize repository, align the go.mod and go.sum files, and potentially make sure everything in `kustomize` and this repository are pointing to the same files on disk, eg: 
+If this *still* didn't do it for you, see if you can use `go mod edit -replace` to align all the versions to be absolutely identical to kustomize. There is a python script that does this for you at `generate_replacements.py`.
 
-In kustomize/go.mod
+The result will look like this: 
 
 ```
-replace sigs.k8s.io/kustomize/api => ../api
+replace sigs.k8s.io/kustomize/api => sigs.k8s.io/kustomize/api v0.13.4
 
-replace sigs.k8s.io/kustomize/cmd/config => ../cmd/config
+replace sigs.k8s.io/kustomize/cmd/config => sigs.k8s.io/kustomize/cmd/config v0.11.2
 
-replace sigs.k8s.io/kustomize/kyaml => ../kyaml
+replace sigs.k8s.io/kustomize/kyaml => sigs.k8s.io/kustomize/kyaml v0.14.2
+
+replace github.com/golang/protobuf => github.com/golang/protobuf v1.5.2
+
+replace google.golang.org/protobuf => google.golang.org/protobuf v1.28.0
+
+replace github.com/google/go-cmp => github.com/google/go-cmp v0.5.5
+
+replace github.com/spf13/cobra => github.com/spf13/cobra v1.4.0
+
+replace github.com/spf13/pflag => github.com/spf13/pflag v1.0.5
+
+replace github.com/stretchr/testify => github.com/stretchr/testify v1.8.1
+
+replace golang.org/x/text => golang.org/x/text v0.6.0
+
+replace sigs.k8s.io/yaml => sigs.k8s.io/yaml v1.3.0
 ```
 
-In this repo/go.mod
-```
-replace sigs.k8s.io/kustomize/api => /path/to/kustomize/src/kustomize/api
-
-replace sigs.k8s.io/kustomize/cmd/config => /path/to/kustomize/src/kustomize/cmd/config
-
-replace sigs.k8s.io/kustomize/kyaml => /path/to/kustomize/src/kustomize/kyaml
-```
